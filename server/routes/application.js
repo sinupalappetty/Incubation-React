@@ -6,7 +6,7 @@ router.route('/add-application').post(createApplication)
 router.route('/get-user').post(getUserDetails)
 router.route('/get-application/:id').post(getUserApplication)
 
+  
 
-
-
+  
 module.exports = router

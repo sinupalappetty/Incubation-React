@@ -14,7 +14,7 @@ function AddApplication() {
         try {
             const { data } = await axios.post('http://localhost:4000/add-application', applicationData, { withCredentials: true })
             if (data.status == true) {
-                navigate('/')
+                navigate('/')  
             } else {
                 toast.error(data.error, { position: 'top-center' })
             }
